@@ -1,0 +1,36 @@
+import { useState } from "react";
+
+function Root() {
+  const [text, setText] = useState("");
+  return (
+    <div className="h-screen w-screen bg-green-400 flex justify-center">
+      <div className="self-center h-2/5 w-3/4 p-4 min-h-fit bg-white rounded-md flex flex-col justify-around items-center">
+        <p className="w-max h-max">URL Shortner</p>
+        <div className="w-full border-2 border-black rounded ">
+          <input
+            type="text"
+            name="url-input"
+            id=""
+            className="w-full p-1 outline-none"
+            value={text}
+            onChange={(e) => setText(e.target.value)}
+          />
+        </div>
+        <button
+          className="bg-green-400 text-white rounded p-1"
+          onClick={() => {
+            if (text) {
+              console.log(text);
+              setText("");
+            }
+          }}
+        >
+          Generate shortned URL
+        </button>
+        <p className="">Shortned URL here</p>
+      </div>
+    </div>
+  );
+}
+
+export default Root;
