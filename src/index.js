@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import Root from "./Root";
-import RedirectPage from "./Redirect"
-import Error from "./Error";
+import Root from "./pages/Root";
+import RedirectPage from "./pages/Redirect"
+import Error from "./pages/Error";
 import reportWebVitals from "./reportWebVitals";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
