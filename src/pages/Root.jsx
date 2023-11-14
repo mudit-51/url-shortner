@@ -24,7 +24,7 @@ function Root() {
           new URL(text);
           setRes("Loading");
           const hash = await sendURL(text);
-          setRes(`http://localhost:3000/${hash}`);
+          setRes(`https://mudit-51-url-shortner.netlify.app/${hash}`);
         } catch (e) {
           setRes("Invalid URL entered");
         }
