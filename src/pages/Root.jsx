@@ -4,7 +4,7 @@ function Root() {
   const [text, setText] = useState("");
   const [res, setRes] = useState("Shortned URL here");
   const sendURL = async function (textURL) {
-    const resp = await fetch("http://localhost:5000/create", {
+    const resp = await fetch("https://balmy-apogee-405108.el.r.appspot.com/create", {
       headers: {
         "Content-Type": "application/json",
       },
